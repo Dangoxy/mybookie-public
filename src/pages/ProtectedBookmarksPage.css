@@ -1,0 +1,176 @@
+.protectedpage--maincontainer{
+
+   
+    width: 100%;
+    height: 100vh;
+    /* min-height: -webkit-fill-available; */
+    
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    gap: 20px;
+    
+
+
+    background:linear-gradient(45deg,rgba(0, 224, 224) 0%,rgb(201, 191, 218) var(--percentage),rgb(0, 224, 224) 100%);
+    animation: waveAnimation3 10s ease-in-out infinite;
+
+    
+
+}
+
+@keyframes waveAnimation3 {
+    0%{--percentage: 0%;}
+    50%{--percentage: 100%;}
+    100%{--percentage: 0%}
+
+}
+
+.protectedpage--linkitemscontainer{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.25);
+    outline: 4px solid rgba(255, 255, 255, 0.5);
+    
+    margin-top: 90px;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-radius: 15px;
+
+    box-sizing: border-box;
+
+    overflow-y: auto;
+
+    
+
+    height: 100%;
+    /* height: -webkit-fill-available; */
+    
+}
+
+.protectedpage--linkitemscontainer::-webkit-scrollbar {
+    width: 32px;
+    border-radius: 20px;
+    
+}
+
+.protectedpage--linkitemscontainer::-webkit-scrollbar-track {
+    
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0) inset;
+    border-radius: 20px;
+    
+    
+    
+    
+}
+
+.protectedpage--linkitemscontainer::-webkit-scrollbar-thumb {
+    box-shadow: 0px 0px 4px 5px rgb(146, 188, 189) inset;
+    border-radius: 32px; 
+    border: 8px solid transparent;
+    
+}
+
+
+.protectedpage--form{
+
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.protectedpage--form input{
+
+    width: 100%;
+    padding: 10px 20px;
+
+    font-size: 1rem;
+
+    border-radius: 50px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: 4px solid rgba(255, 255, 255, 0.5);
+
+    
+    border: none;
+
+    font-weight: 600;
+
+    color: rgb(26, 26, 26);
+
+}
+
+.protectedpage--form button{
+    border-radius: 50px;
+    padding: 10px 20px;
+
+    background-color: rgba(255, 255, 255, 0.4);
+    outline: 4px solid rgba(255, 255, 255, 0.5);
+    color: rgb(65, 65, 65);
+    border: none;
+
+    font-weight: 600;
+}
+
+@media screen and (width < 600px) {
+    .inputfile{
+        display: none;
+    }
+}
+
+#inputfile::file-selector-button{
+    color: transparent;
+    cursor: pointer;
+    background: url("upload_file_FILL0_wght400_GRAD0_opsz24.png");
+    background-repeat: no-repeat;
+    
+    width: 24px;
+    height: 24px;
+    background-position: center;
+    margin-right: 10px;
+    margin-left: -5px;
+
+    border: none;
+
+
+    
+    
+}
+
+
+
+#inputfile{
+    width: fit-content;
+}
+
+#resetButton{
+    /* aspect-ratio: 1/1; */
+    padding: 10px;
+    
+    
+}
+
+.emptyTag{
+    font-size: 1.4rem;
+    font-weight:  500;
+    text-align: center;
+    color: rgb(80, 80, 80);
+
+}
+
+
+
+.protectedpage--form input[type=file] {
+    
+    color: rgb(65,65,65);
+    
+    
+  }

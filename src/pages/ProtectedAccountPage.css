@@ -1,0 +1,217 @@
+.protectedaccountpage--maincontainer{
+
+   
+    width: 100%;
+    min-height: 100vh;
+    
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+
+    
+    /* justify-content: center; */
+    align-items: center;
+
+    padding: 20px;
+    padding-top: 110px;
+    gap: 10px;
+
+    
+    
+    
+
+    background:linear-gradient(45deg,rgb(0, 224, 224) 0%,rgb(201, 191, 218) var(--percentage),rgb(0, 224, 224) 100%);
+    animation: waveAnimation3 10s ease-in-out infinite;
+
+    
+
+}
+.protectedaccountpage--maincontainer button{
+    color: black;    
+}
+
+@keyframes waveAnimation3 {
+    0%{--percentage: 0%;}
+    50%{--percentage: 100%;}
+    100%{--percentage: 0%}
+
+}
+
+
+.protectedaccountpage--privacycontainer{
+    /* border: 2px solid black; */
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    border-radius: 10px;
+
+    max-width: 800px;
+}
+
+.protectedaccountpage--privacytitle{
+    /* border: 2px solid black; */
+    text-align: center;
+    
+}
+
+.protectedaccountpage--submaincontainer{
+    border: 0px solid rgba(128, 128, 128, 0.25);
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.protectedaccountpage--privacyonesection{
+    border: 2px solid rgba(128, 128, 128, 0.25);
+    padding: 0px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+}
+
+.protectedaccountpage--privacyonesection button{
+    padding: 5px 10px;
+    border-radius: 24px;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.25);
+    font-weight: 600;
+    background-color: #e6e6ff;
+}
+
+.protectedaccountpage--privacyonesection h4{
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.25);
+    
+    
+}
+
+.protectedaccountpage--accountinformationavatar{
+    
+    
+    border: none;
+    width: 24px;
+    height: 24px;
+    
+    background-color: transparent;
+}
+
+
+
+.protectedaccountpage--avatarscontainer{
+    background-color: rgba(225, 225, 225, 0.5);
+    width: 100%;
+    max-width: 552px;
+
+    border: 0px solid rgba(255,255,255,0.25);
+
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    
+    overflow: hidden;
+
+    height: 100%;
+    max-height: 568px;
+    
+
+    transition: all 0.75s ease-in-out;    
+    
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    
+}
+
+.protectedaccountpage--avatarscontainer button{
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    outline: 2px solid rgba(128, 128, 128, 0.25);
+    font-weight: 600;
+    background-color: rgb(255, 255, 255,0.9);
+}
+
+
+
+/* .protectedaccountpage--accountinformationavatar:hover + .protectedaccountpage--avatarscontainer{
+    max-height: 0px;
+
+    padding: 0px 20px;
+} */
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 90px;
+
+    
+}
+
+.animationSpin{
+    width: 196px;
+    height: 196px;
+    
+    /* filter: invert(30%) sepia(8%) saturate(965%) hue-rotate(245deg) brightness(93%) contrast(87%); */
+    border-radius: 100%;
+    
+    animation: LoadingSpin 1.25s ease infinite;
+    transform: rotate(-90deg);
+}
+
+@keyframes LoadingSpin {
+    0%{transform: rotate(-90deg);}
+
+    100%{transform: rotate(270deg);}
+    
+}
+
+.protectedaccountpage--fullViewOfChange{
+    height: 100%;
+    max-height: 250px;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 100%;
+
+    box-sizing: border-box;
+
+    transition: all 0.75s ease-in-out; 
+}
+
+.protectedaccountpage--fullViewOfChange button{
+    color: black;
+}
+
+.idk--centered{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.material-symbols-outlined{
+    color: black;
+}

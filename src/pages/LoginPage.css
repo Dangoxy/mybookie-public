@@ -1,0 +1,11 @@
+.loadingButton{
+  
+
+    animation: spin 1s infinite ease;
+}
+@keyframes spin {
+    0%{transform: rotate(-90deg);}
+    
+    100%{transform: rotate(270deg);}
+    
+}

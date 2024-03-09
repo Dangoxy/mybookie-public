@@ -1,0 +1,72 @@
+.linkitem--maincontainer{
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.4);
+
+    /* outline: 2px solid rgba(128, 128, 128, 0.24); */
+
+    width: 100%;
+    padding: 10px 20px;
+
+    box-sizing: border-box;
+
+    border-radius: 10px;
+
+    gap: 10px;
+    
+    
+}
+
+
+
+.linkitem--data{
+    display: flex;
+    gap: 10px;
+
+    justify-content: start;
+    align-items: center;
+
+    
+    /* background-color: rgba(0, 0, 0, 0.425); */
+
+    
+    
+    word-break:break-all;
+
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    
+}
+
+.linkitem--data:hover{
+    cursor: pointer;
+}
+
+
+
+.linkitem--data img{
+    width: 24px;
+    height: 24px;
+    
+}
+
+
+
+.linkitem--buttons{
+    display: flex;
+    gap: 10px;
+
+
+    
+}
+
+.linkitem--buttons a:hover{
+    cursor: pointer;
+}
+
+.linkitem--buttons a{
+    display: flex;
+}
